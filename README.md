@@ -1,22 +1,22 @@
-public class OOPSBannerApp {
 
-    public static void main(String[] args) {
+}public static void main(String[] args) {
+ 
+    
 
-        // Step 1: Declare array
-        String[] banner = new String[7];
+    
+    String row1 = String.join(" ", " ****", " ****", " ****", " ****");
+    String row2 = String.join(" ", "* *", "* *", "* *", "* ");
+    String row3 = String.join(" ", "* *", "* *", "* *", "* ");
+    String row4 = String.join(" ", "* *", "* *", " ****", " ****");
+    String row5 = String.join(" ", "* *", "* *", "* ", "    *");
+    String row6 = String.join(" ", "* *", "* *", "* ", "    *");
+    String row7 = String.join(" ", " ****", " ****", "* ", " ****");
 
-        // Step 2: Populate array using String.join()
-        banner[0] = String.join("", " **   ", " **   ", " **   ", " ** ");
-        banner[1] = String.join("", "*      *  ", "*      *  ", "*      *  ", "*      ");
-        banner[2] = String.join("", "*      *  ", "*      *  ", "*      *  ", "*      ");
-        banner[3] = String.join("", "*      *  ", "*      *  ", " **   ", " ** ");
-        banner[4] = String.join("", "*      *  ", "*      *  ", "*         ", "      *");
-        banner[5] = String.join("", "*      *  ", "*      *  ", "*         ", "      *");
-        banner[6] = String.join("", " **   ", " **   ", "*         ", " ** ");
-
-        // Step 3: Print using enhanced for loop
-        for (String line : banner) {
-            System.out.println(line);
-        }
-    }
+    System.out.println(row1);
+    System.out.println(row2);
+    System.out.println(row3);
+    System.out.println(row4);
+    System.out.println(row5);
+    System.out.println(row6);
+    System.out.println(row7);
 }
