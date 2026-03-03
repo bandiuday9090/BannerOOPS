@@ -1,21 +1,15 @@
-public class OOPSBannerApp {
-
+public class BannerApp {
     public static void main(String[] args) {
 
-        // Step 1: Declare array
-        String[] banner = new String[7];
+        String[] bannerLines = {
+            String.join("", " ****", " * *", " ****", " * *", " ****"),
+            String.join("", "  ** ", " * *", " ****", " * *", " * *"),
+            String.join("", " * *", " ** *", " * **", " * *", " * *"),
+            String.join("", " * *", " ** *", " * **", " * *", " * *"),
+            String.join("", " ****", " * *", " ****", " * *", " ****")
+        };
 
-        // Step 2: Populate array using String.join()
-        banner[0] = String.join("", " **   ", " **   ", " **   ", " ** ");
-        banner[1] = String.join("", "*      *  ", "*      *  ", "*      *  ", "*      ");
-        banner[2] = String.join("", "*      *  ", "*      *  ", "*      *  ", "*      ");
-        banner[3] = String.join("", "*      *  ", "*      *  ", " **   ", " ** ");
-        banner[4] = String.join("", "*      *  ", "*      *  ", "*         ", "      *");
-        banner[5] = String.join("", "*      *  ", "*      *  ", "*         ", "      *");
-        banner[6] = String.join("", " **   ", " **   ", "*         ", " ** ");
-
-        // Step 3: Print using enhanced for loop
-        for (String line : banner) {
+        for (String line : bannerLines) {
             System.out.println(line);
         }
     }
