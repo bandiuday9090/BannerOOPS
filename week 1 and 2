@@ -1,0 +1,111 @@
+LEVEL 1
+1)public class HarryAge {
+    public static void main(String[] args) {
+        
+        int birthYear = 2000;
+        int currentYear = 2024;
+        
+        int age = currentYear - birthYear;
+        
+        System.out.println("Harry's age in 2024 is " + age);
+    }
+}
+
+4)public class ProfitLoss {
+    public static void main(String[] args) {
+        
+        double costPrice = 129;
+        double sellingPrice = 191;
+        
+        double profit = sellingPrice - costPrice;
+        double profitPercentage = (profit / costPrice) * 100;
+        
+        System.out.println(
+            "The Cost Price is INR " + costPrice + 
+            " and Selling Price is INR " + sellingPrice + "\n" +
+            "The Profit is INR " + profit + 
+            " and the Profit Percentage is " + profitPercentage
+        );
+    }
+}
+5)public class Main {
+    public static void main(String[] args) {
+        
+        int pens = 14;
+        int students = 3;
+        
+        int perStudent = pens / students;
+        int remaining = pens % students;
+        
+        System.out.println("The Pen Per Student is " + perStudent +
+        " and the remaining pen not distributed is " + remaining);
+    }
+}
+
+LEVEL 2
+1)import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter first number: ");
+        double number1 = sc.nextDouble();
+        
+        System.out.print("Enter second number: ");
+        double number2 = sc.nextDouble();
+        
+        double add = number1 + number2;
+        double sub = number1 - number2;
+        double mul = number1 * number2;
+        double div = number1 / number2;
+        
+        System.out.println("The addition, subtraction, multiplication, and division value of 2 numbers "
+        + number1 + " and " + number2 + " is "
+        + add + ", " + sub + ", " + mul + ", and " + div);
+        
+        sc.close();
+    }
+}
+5)import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter unit price: ");
+        double unitPrice = sc.nextDouble();
+        
+        System.out.print("Enter quantity: ");
+        int quantity = sc.nextInt();
+        
+        double totalPrice = unitPrice * quantity;
+        
+        System.out.println("The total purchase price is INR " + totalPrice +
+        " if the quantity " + quantity +
+        " and unit price is INR " + unitPrice);
+        
+        sc.close();
+    }
+}
+LEVEL 3
+2)import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter temperature in Fahrenheit: ");
+        double fahrenheit = sc.nextDouble();
+        
+        double celsiusResult = (fahrenheit - 32) * 5 / 9;
+        
+        System.out.println("The " + fahrenheit + " fahrenheit is " 
+        + celsiusResult + " celsius");
+        
+        sc.close();
+    }
+}
